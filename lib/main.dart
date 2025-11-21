@@ -321,47 +321,52 @@ class MyApp extends StatelessWidget {
             ),
             
             Container(
-              margin: EdgeInsets.only(top: 10,left:40),
-              padding: EdgeInsets.all(5),
+              
+              decoration: BoxDecoration(color: Colors.blue[100]),
+              margin: EdgeInsets.only(top: 10,left:20, right: 20),
+              padding: EdgeInsets.only(top:10, left:40),
               child: Row(
+                
+
                 children: [
+                  
                   Container(
-                    margin: EdgeInsets.all(6),
+                    margin: EdgeInsets.only(top:6, left: 10),
                     padding: EdgeInsets.all(5),
                     child: Column(
                       children: [
                         Icon(Icons.list_alt_outlined, color: Colors.green[300],),
-                        Row( children: [
-                        Container(margin: EdgeInsets.all(2), child: Text("Prep"),),
-                        Container(margin: EdgeInsets.all(2), child: Text("25 min"),)
+                        Column( children: [
+                        Container(margin: EdgeInsets.all(10), child: Text("PREP:"),),
+                        Container(child: Text("25 min"),)
                         ],
                         )
                       ],
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.all(6),
+                    margin: EdgeInsets.only(top:6, left: 10),
                     padding: EdgeInsets.all(5),
                     child: Column(
                       children: [
                         Icon(Icons.timelapse_sharp, color: Colors.green[300],),
-                        Row( children: [
-                        Container(margin: EdgeInsets.all(2), child: Text("Cook"),),
-                        Container(margin: EdgeInsets.all(2), child: Text("1 hr"),)
+                        Column( children: [
+                        Container(margin: EdgeInsets.all(10), child: Text("Cook"),),
+                        Container(child: Text("1 hr"),)
                         ],
                         )
                       ],
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.all(6),
+                    margin: EdgeInsets.only(top:6, left:10),
                     padding: EdgeInsets.all(5),
                     child: Column(
                       children: [
                         Icon(Icons.dining_outlined, color: Colors.green[300],),
-                        Row( children: [
-                        Container(margin: EdgeInsets.all(2), child: Text("FEEDS"),),
-                        Container(margin: EdgeInsets.all(2), child: Text("4-6"),)
+                        Column( children: [
+                        Container(margin: EdgeInsets.all(10), child: Text("FEEDS"),),
+                        Container(child: Text("4-6"),)
                         ],
                         )
                       ],
