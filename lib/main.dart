@@ -288,13 +288,12 @@ class MyApp extends StatelessWidget {
       // )
       
       Container(
-        margin: EdgeInsets.all(6),
-        padding: EdgeInsets.all(5),
+        color: Colors.green[200],
+        padding: EdgeInsets.all(10),
         child: Column(
           children: [
             Container(
-              margin: EdgeInsets.all(6),
-              padding: EdgeInsets.all(5),
+              padding: EdgeInsets.all(10),
               decoration: BoxDecoration(color: Colors.purple[200], borderRadius: BorderRadius.circular(5),),
               child:Text("Strawberry Pavlova", style: TextStyle(color: Colors.blue[800]),),
             ),
@@ -315,7 +314,7 @@ class MyApp extends StatelessWidget {
                   Icon(Icons.star, color: Colors.grey[600],),
                   Icon(Icons.star, color: Colors.grey[600],),
                   Icon(Icons.star, color: Colors.grey[600],),
-                  Text("                    170 Reviews"),
+                  Text("                    170 Reviews",),
                 ],
               ),
             ),
