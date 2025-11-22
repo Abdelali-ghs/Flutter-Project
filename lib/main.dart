@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MyApp());
+  
 }
 
 class MyApp extends StatelessWidget {
+  
 
   MyApp({super.key});
 
@@ -25,12 +27,14 @@ class MyApp extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-  
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Title"),
+          title: Text("My First Exemple"),
+          backgroundColor: Colors.blue[600],
         ),
+        
         // body: Container(
         //   // decoration: BoxDecoration(
         //   //   color: Colors.blue.shade200,
@@ -73,6 +77,7 @@ class MyApp extends StatelessWidget {
         // )     
          
         body: 
+        
         // Container(
         //   margin: EdgeInsets.all(20),
         //   color: Colors.yellow.shade100,
@@ -287,99 +292,176 @@ class MyApp extends StatelessWidget {
       //   ],
       // )
       
+      // Container(
+      //   color: Colors.green[200],
+      //   padding: EdgeInsets.all(10),
+      //   child: Column(
+      //     children: [
+      //       Container(
+      //         padding: EdgeInsets.all(10),
+      //         decoration: BoxDecoration(color: Colors.purple[200], borderRadius: BorderRadius.circular(5),),
+      //         child:Text("Strawberry Pavlova", style: TextStyle(color: Colors.blue[800]),),
+      //       ),
+      //       Container(
+      //         margin: EdgeInsets.all(6),
+      //         padding: EdgeInsets.all(5),
+      //         decoration: BoxDecoration(color: Colors.blue[200], borderRadius: BorderRadius.circular(5),),
+      //         child: Text("Pavlova is a meringue-based dessert named after the Russian ballerina Anna Pavlova. Pavlova features a crisp crust and soft, light inside, topped with fruit and whipped cream.",style: TextStyle(color: Colors.black,),)
+      //       ),
+      //       Container(
+      //         margin: EdgeInsets.all(6),
+      //         padding: EdgeInsets.only(left: 30),
+      //         decoration: BoxDecoration(color: Colors.amber),
+      //         child: Row(
+      //           children: [
+      //             Icon(Icons.star, color: Colors.grey[600],),
+      //             Icon(Icons.star, color: Colors.grey[600],),
+      //             Icon(Icons.star, color: Colors.grey[600],),
+      //             Icon(Icons.star, color: Colors.grey[600],),
+      //             Icon(Icons.star, color: Colors.grey[600],),
+      //             Text("                    170 Reviews",),
+      //           ],
+      //         ),
+      //       ),
+            
+      //       Container(
+              
+      //         decoration: BoxDecoration(color: Colors.blue[100]),
+      //         margin: EdgeInsets.only(top: 10,left:20, right: 20),
+      //         padding: EdgeInsets.only(top:10, left:40),
+      //         child: Row(
+                
+
+      //           children: [
+                  
+      //             Container(
+      //               margin: EdgeInsets.only(top:6, left: 10),
+      //               padding: EdgeInsets.all(5),
+      //               child: Column(
+      //                 children: [
+      //                   Icon(Icons.list_alt_outlined, color: Colors.green[300],),
+      //                   Column( children: [
+      //                   Container(margin: EdgeInsets.all(10), child: Text("PREP:"),),
+      //                   Container(child: Text("25 min"),)
+      //                   ],
+      //                   )
+      //                 ],
+      //               ),
+      //             ),
+      //             Container(
+      //               margin: EdgeInsets.only(top:6, left: 10),
+      //               padding: EdgeInsets.all(5),
+      //               child: Column(
+      //                 children: [
+      //                   Icon(Icons.timelapse_sharp, color: Colors.green[300],),
+      //                   Column( children: [
+      //                   Container(margin: EdgeInsets.all(10), child: Text("Cook"),),
+      //                   Container(child: Text("1 hr"),)
+      //                   ],
+      //                   )
+      //                 ],
+      //               ),
+      //             ),
+      //             Container(
+      //               margin: EdgeInsets.only(top:6, left:10),
+      //               padding: EdgeInsets.all(5),
+      //               child: Column(
+      //                 children: [
+      //                   Icon(Icons.dining_outlined, color: Colors.green[300],),
+      //                   Column( children: [
+      //                   Container(margin: EdgeInsets.all(10), child: Text("FEEDS"),),
+      //                   Container(child: Text("4-6"),)
+      //                   ],
+      //                   )
+      //                 ],
+      //               ),
+      //             )
+
+      //           ],
+      //         ),
+      //       )
+      //     ],
+      //   ),
+      // )
       Container(
-        color: Colors.green[200],
         padding: EdgeInsets.all(10),
         child: Column(
           children: [
             Container(
-              padding: EdgeInsets.all(10),
-              decoration: BoxDecoration(color: Colors.purple[200], borderRadius: BorderRadius.circular(5),),
-              child:Text("Strawberry Pavlova", style: TextStyle(color: Colors.blue[800]),),
-            ),
+              padding: EdgeInsets.all(5), 
+              width: double.infinity,
+              decoration: BoxDecoration( color: Colors.blue[50], border: Border.all(color: Colors.black, width: 2) ),
+              child: Text("Strawberry Pavlova",textAlign: TextAlign.center ,style: TextStyle(color:Colors.grey[500],fontSize: 18, fontWeight: FontWeight.w600),) ),
             Container(
-              margin: EdgeInsets.all(6),
-              padding: EdgeInsets.all(5),
-              decoration: BoxDecoration(color: Colors.blue[200], borderRadius: BorderRadius.circular(5),),
-              child: Text("Pavlova is a meringue-based dessert named after the Russian ballerina Anna Pavlova. Pavlova features a crisp crust and soft, light inside, topped with fruit and whipped cream.",style: TextStyle(color: Colors.black,),)
-            ),
+              margin: EdgeInsets.only(top:10),
+              padding: EdgeInsets.symmetric(horizontal: 30, vertical: 5), 
+              width: double.infinity,
+              decoration: BoxDecoration( color: Colors.blue[50], border: Border.all(color: Colors.black, width: 2) ),
+              child: Text("Pavlova is a meringue-based dessert named after the Russian ballerina Anna Pavlova. Pavlova features a crisp crust and soft, light inside, topped with fruit and whipped cream.",textAlign: TextAlign.center ,style: TextStyle(color:Colors.grey[500],fontSize: 15, fontWeight: FontWeight.w400),) ),
             Container(
-              margin: EdgeInsets.all(6),
-              padding: EdgeInsets.only(left: 30),
-              decoration: BoxDecoration(color: Colors.amber),
+              decoration: BoxDecoration( color: Colors.blue[50], border: Border.all(color: Colors.black, width: 2) ),
+              margin: EdgeInsets.only(top:10),
+              padding: EdgeInsets.symmetric(vertical: 5),
+              // padding: EdgeInsets.symmetric(horizontal: 60, vertical: 5),
+              width: double.infinity,
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Icon(Icons.star, color: Colors.grey[600],),
-                  Icon(Icons.star, color: Colors.grey[600],),
-                  Icon(Icons.star, color: Colors.grey[600],),
-                  Icon(Icons.star, color: Colors.grey[600],),
-                  Icon(Icons.star, color: Colors.grey[600],),
-                  Text("                    170 Reviews",),
+                  Row(
+                    children: [
+                      Icon(Icons.star, color: Colors.grey[600],size: 18,),
+                      Icon(Icons.star, color: Colors.grey[600],size: 18,),
+                      Icon(Icons.star, color: Colors.grey[600],size: 18,),
+                      Icon(Icons.star, color: Colors.grey[600],size: 18,),
+                      Icon(Icons.star, color: Colors.grey[600],size: 18,),
+                    ]
+                  ),
+                  Text("170 Reviews", style: TextStyle(color:Colors.grey[500],fontSize: 15, fontWeight: FontWeight.w400),)
                 ],
+
               ),
             ),
-            
             Container(
-              
-              decoration: BoxDecoration(color: Colors.blue[100]),
-              margin: EdgeInsets.only(top: 10,left:20, right: 20),
-              padding: EdgeInsets.only(top:10, left:40),
+            margin: EdgeInsets.only(top:10),
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            decoration: BoxDecoration( color: Colors.blue[50], border: Border.all(color: Colors.black, width: 2) ),
               child: Row(
-                
-
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
+                  Column(
+                    children: [
+                      Icon(Icons.list_alt_outlined, color: Colors.green[300],size: 30,),
+                      Container(margin: EdgeInsets.only(top:10), child: Text("PREP:", style: TextStyle(color:Colors.grey[500],fontSize: 15, fontWeight: FontWeight.w400),),),
+                      Container(child: Text("25 min", style: TextStyle(color:Colors.grey[500],fontSize: 15, fontWeight: FontWeight.w400),),)
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Icon(Icons.timelapse_sharp, color: Colors.green[300],size: 30,),
+                      Container(margin: EdgeInsets.only(top:10), child: Text("COOK:", style: TextStyle(color:Colors.grey[500],fontSize: 15, fontWeight: FontWeight.w400),),),
+                      Container(child: Text("1 hr", style: TextStyle(color:Colors.grey[500],fontSize: 15, fontWeight: FontWeight.w400),),)
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Icon(Icons.dining_outlined, color: Colors.green[300],size: 30,),
+                      Container(margin: EdgeInsets.only(top:10), child: Text("FEEDS:", style: TextStyle(color:Colors.grey[500],fontSize: 15, fontWeight: FontWeight.w400),),),
+                      Container(child: Text("4-6", style: TextStyle(color:Colors.grey[500],fontSize: 15, fontWeight: FontWeight.w400),),)
+                    
                   
-                  Container(
-                    margin: EdgeInsets.only(top:6, left: 10),
-                    padding: EdgeInsets.all(5),
-                    child: Column(
-                      children: [
-                        Icon(Icons.list_alt_outlined, color: Colors.green[300],),
-                        Column( children: [
-                        Container(margin: EdgeInsets.all(10), child: Text("PREP:"),),
-                        Container(child: Text("25 min"),)
-                        ],
-                        )
-                      ],
-                    ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.only(top:6, left: 10),
-                    padding: EdgeInsets.all(5),
-                    child: Column(
-                      children: [
-                        Icon(Icons.timelapse_sharp, color: Colors.green[300],),
-                        Column( children: [
-                        Container(margin: EdgeInsets.all(10), child: Text("Cook"),),
-                        Container(child: Text("1 hr"),)
-                        ],
-                        )
-                      ],
-                    ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.only(top:6, left:10),
-                    padding: EdgeInsets.all(5),
-                    child: Column(
-                      children: [
-                        Icon(Icons.dining_outlined, color: Colors.green[300],),
-                        Column( children: [
-                        Container(margin: EdgeInsets.all(10), child: Text("FEEDS"),),
-                        Container(child: Text("4-6"),)
-                        ],
-                        )
-                      ],
-                    ),
-                  )
-
                 ],
+
               ),
-            )
+            
           ],
         ),
       )
 
+
+          ]
       )  
+      )
+      )
 
 
       // ]
